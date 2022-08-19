@@ -138,7 +138,7 @@ $(document).ready(function(){
         $('.newpass').addClass('active');
     });
     $('.change-pass').click(function(){
-        $('.home-card, .box-password, .btn-back-card, .user-card').addClass('active');
+        $('.home-card, .box-password, .btn-back-card, .user-card, .btn-back-card-home').addClass('active');
     });
     $('.btn-back-card').click(function(){
         $('.home-card, .home-card-box, .box-password, .btn-back-card, .user-card, .btn-back-card-home').removeClass('active');
