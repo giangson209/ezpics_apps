@@ -24,16 +24,10 @@ $(document).ready(function(){
         $(this).closest('.step-forgot').removeClass('active');
     });
 
-    // const passBtn = $(".show-pass");
-    // passBtn.click(togglePassword);
-    // function togglePassword() {
-    //   const passInput = $("#password");
-    //   if (passInput.attr("type") === "password") {
-    //     passInput.attr("type", "text");
-    //   } else {
-    //     passInput.attr("type", "password");
-    //   }
-    // }
+    $('.item-method').click(function(){
+        $('.item-method').removeClass('active');
+        $(this).addClass('active');
+    });
 
     var clicked = 0;
     $(".show-pass").click(function (e) {
@@ -81,5 +75,90 @@ $(document).ready(function(){
      
       $('#timer').countdown(60 * 1000);
     })(jQuery);
+
+    $('.slide-banner').slick({
+        autoplay:false,
+        arrow:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        prevArrow: '', 
+        nextArrow: '', 
+    });
+
+    $('.slide-avarta').slick({
+        autoplay:false,
+        arrow:false,
+        slidesToShow: 2.2,
+        dots: false,
+        infinite: false,
+        prevArrow: '', 
+        nextArrow: '', 
+    });
+
+    $('.slide-product').slick({
+        autoplay:false,
+        arrow:false,
+        slidesToShow: 2,
+        dots: false,
+        prevArrow: '', 
+        nextArrow: '', 
+    });
+
+    $('.clc-data-list').click(function(){
+        $('.box-data-pol, .avarta-user, .back-home, body, html').addClass('active');
+    });
+    $('.back-home').click(function(){
+        $('.box-data-pol, .avarta-user, .back-home, body, html').removeClass('active');
+    });
+    $('.heart a').click(function(){
+        $(this).toggleClass('active');
+    });
+    $('.info-confirm a').click(function(){
+        $('.info-confirm').slideUp(400);
+        $('.content-thumb-info').slideDown(400);
+    });
+    $('.clc-buy').click(function(){
+        $('.info-confirm').slideDown(400);
+        $('.content-thumb-info').slideUp(400);
+    });
+    $('.yes-confirm').click(function(){
+        $('.creat-layout').addClass('active');
+    });
+    $('.item-avarta-top').click(function(){
+        $('.clc-back').removeClass('active');
+        $('.box-detail-product, .back-data, .avarta-user').addClass('active');
+    });
+    $('.back-data').click(function(){
+        $('.box-detail-product, .clc-back').removeClass('active');
+        $('.back-home').click();
+    });
+    $('.btn-checkpass').click(function(){
+        $('.checkpass').hide();
+        $('.newpass').addClass('active');
+    });
+    $('.change-pass').click(function(){
+        $('.home-card, .box-password, .btn-back-card, .user-card').addClass('active');
+    });
+    $('.btn-back-card').click(function(){
+        $('.home-card, .home-card-box, .box-password, .btn-back-card, .user-card, .btn-back-card-home').removeClass('active');
+    });
+    $('.user-card p svg').click(function(){
+        $('.hide-mn, .numb-mn').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+
+
+    $('.clc-checkout').click(function(){
+        $('.box-money, html, body').addClass('active');
+    });
+    $('.recharge').click(function(){
+        $('.home-card-box, .btn-back-card, .btn-back-card-home').addClass('active');
+    });
+
+    $('.btn-back-card-home').click(function(){
+        $('.box-money, html, body').removeClass('active');
+
+    });
 })
 

@@ -1,5 +1,5 @@
 <?php include 'header.php';?>
-<main>
+<main class="p-0">
 	<section class="box-account">
 		<!-- <div class="loading text-center">
 			<div class="logo"><img src="images/logo.png" class="img-fluid" alt=""></div>
