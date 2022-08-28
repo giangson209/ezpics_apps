@@ -27,7 +27,10 @@
 	<section class="box-product"> 
 		<div class="container">
 			<div class="title">
-				<h2><span>Ảnh đại diện</span><img src="images/arrow-right.png" class="img-fluid" alt=""></h2>
+				<div class="left"><h2><span>Ảnh đại diện</span><img src="images/arrow-right.png" class="img-fluid" alt=""></h2></div>
+				<div class="right">
+					<a href="javascript:void(0)" class="clc-detail-temp">Chi tiết ></a>
+				</div>
 			</div>
 			<div class="list-avarta-top">
 				<div class="slide-avarta">
@@ -414,6 +417,256 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="box-detail-template">
+		<div class="container">
+			<div class="detail-temp">
+				<div class="title">
+					<h2><span>Ảnh đại diện </span><img src="images/arrow-right.png" class="img-fluid" alt=""></h2>
+				</div>
+				<div class="desc-detail">
+					<ul>
+						<li>
+							<p>Nhà cung cấp:</p>
+							<p>Mantan</p>
+						</li>
+						<li>
+							<p>Ngày phát hành:</p>
+							<p>29/08/2022</p>
+						</li>
+						<li>
+							<p>Cập nhật vào:</p>
+							<p>29/08/2022</p>
+						</li>
+						<li>
+							<p>Kích thước:</p>
+							<p>4:3</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="list-prd">
+				<div class="title">
+					<h2><span>Template trong kho </span><img src="images/arrow-right.png" class="img-fluid" alt=""></h2>
+				</div>
+				<div class="row">
+					<?php
+						for ($x = 0; $x <= 3; $x++) { ?>
+						  <div class="col-md-6 col-6 col-sm-6">
+							<div class="item-avarta-top">
+								<div class="avarta"><a href="javascript:void(0)"><img src="images/av-1.png" class="img-fluid w-100" alt=""></a></div>
+								<div class="info">
+									<h3 class="text-uppercase text-center"><a href="javascript:void(0)">AVATAR ẤN TƯỢNG ĐEN GOLD (A001)</a></h3>
+									<div class="price">
+										<del>đ159.000</del>
+										<span>đ35.000</span> 
+									</div>
+									<div class="bot-avr">
+										<div class="left">
+											<div class="heart"><img src="images/heart.png" class="img-fluid" alt=""></div>
+										</div>
+										<div class="right">
+											<div class="star">
+												<ul>
+													<li><img src="images/star.png" class="img-fluid" alt=""></li>
+													<li><img src="images/star.png" class="img-fluid" alt=""></li>
+													<li><img src="images/star.png" class="img-fluid" alt=""></li>
+													<li><img src="images/star.png" class="img-fluid" alt=""></li>
+													<li><img src="images/star-o.png" class="img-fluid" alt=""></li>
+													<li><span>Đã bán 20 mẫu</span></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<?php }
+					?>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="box-detail-edit">
+		<div class="teop">
+			<div class="container">
+				<div class="avar-thumb"><img src="images/thumb.png" class="img-fluid w-100" alt=""></div>
+				<div class="btn-method-layer">
+					<ul>
+						<li><a href="javascript:void(0)" class="clc_layer layer-1">Layer</a></li>
+						<li><a href="javascript:void(0)" class="clc_layer layer-2">Setting</a></li>
+					</ul>
+				</div>
+				<div class="line"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="info-thumb info-txt-tb">
+				<div class="txt-method-edit text-center">Chọn <strong>Layer</strong> hoặc <strong>Setting</strong></div>
+			</div>
+			<div class="active-event">
+				<div class="choose-top">
+					<ul>
+						<li><a href="javascript:void(0)" data-tab="tab-1" data-lock="lock-1" class="active"><span>Layer 1</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-2" data-lock="lock-2"><span>Text 2</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-3" data-lock="lock-3"><span>Layer 3</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-4" data-lock="lock-4"><span>Layer 4</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-5" data-lock="lock-5"><span>Layer 5</span></a></li>
+					</ul>
+				</div>
+				<div class="content-tab-choose active" id="tab-1">
+					<div class="top">
+						<div class="left">
+							<div class="lock-layer">
+								<a href="javascript:void(0)" id="lock-1"></a>
+							</div>
+						</div>
+						<div class="right">
+							<ul>
+								<li><a href="javascript:void(0)" class="clc-copy"><img src="images/copy.png" class="img-fluid" alt=""></a></li>
+								<li><a href="javascript:void(0)" class="clc-remove"><img src="images/remove.png" class="img-fluid" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="frm-layer">
+						<div class="item flex-1">
+							<div class="i-flx">
+								<span>Ảnh:</span>
+								<input type="file" id="1001">
+								<label for="1001"><img src="images/upload.png" class="img-fluid" alt=""></label>
+							</div>
+						</div>
+						<div class="item flex-3">
+							<div class="i-flx">
+								<span>Kiểu:</span>
+								<input type="text">
+							</div>	
+							<div class="i-flx">
+								<span>Viền:</span>
+								<input type="text">
+							</div>	
+							<div class="i-flx">
+								<span>Màu viền:</span>
+								<input type="text">
+							</div>	
+						</div>
+						<div class="item flex-2">
+							<div class="i-flx">
+								<span>X:</span>
+								<input type="text">
+							</div>	
+							<div class="i-flx">
+								<span>Y:</span>
+								<input type="text">
+							</div>	
+						</div>
+						<div class="item flex-2">
+							<div class="i-flx">
+								<span>W:</span>
+								<input type="text">
+							</div>	
+							<div class="i-flx">
+								<span>H:</span>
+								<input type="text">
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="content-tab-choose" id="tab-2">
+					<div class="top">
+						<div class="left">
+							<div class="lock-layer">
+								<a href="javascript:void(0)" id="lock-2"></a>
+							</div>
+						</div>
+						<div class="right">
+							<ul>
+								<li><a href="javascript:void(0)" class="clc-copy"><img src="images/copy.png" class="img-fluid" alt=""></a></li>
+								<li><a href="javascript:void(0)" class="clc-remove"><img src="images/remove.png" class="img-fluid" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="frm-layer">
+						<div class="item flex-2">
+							<div class="i-flx">
+								<span>Text:</span>
+								<input type="text">
+							</div>	
+							<div class="i-flx">
+								<span>Font:</span>
+								<input type="text">
+							</div>	
+						</div>
+						<div class="item flex-3">
+							<div class="i-flx">
+								<span>Cỡ:</span>
+								<input type="text">
+							</div>	
+							<div class="i-flx">
+								<span>Căn:</span>
+								<input type="text">
+							</div>	
+							<div class="i-flx">
+								<span>Màu:</span>
+								<input type="text">
+							</div>	
+						</div>
+						<div class="item flex-2">
+							<div class="i-flx">
+								<span>X:</span>
+								<input type="text">
+							</div>	
+							<div class="i-flx">
+								<span>Y:</span>
+								<input type="text">
+							</div>	
+						</div>
+						<div class="item flex-2">
+							<div class="i-flx">
+								<span>W:</span>
+								<input type="text">
+							</div>	 
+							<div class="i-flx">
+								<span>H:</span>
+								<input type="text">
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="content-tab-choose" id="tab-3">
+					<div class="frm-layer frm-layer-kt">
+						<div class="item flex-1">
+							<div class="i-flx d-block">
+								<span style="display: block">Chiều dài:</span>
+								<input type="text" class="txt_fx">
+							</div>		
+						</div>
+						<div class="item flex-1">
+							<div class="i-flx d-block">
+								<span style="display: block">Độ cao:</span>
+								<input type="text" class="txt_fx">
+							</div>		
+						</div>
+						<div class="item flex-1">
+							<div class="i-flx d-block">
+								<span style="display: block">Màu nền:</span>
+								<input type="text" class="txt_fx">
+							</div>		
+						</div>
+						<div class="item flex-1">
+							<div class="i-flx d-block">
+								<span>Demo ảnh:</span>
+								<input type="file" id="1001">
+								<label for="1001"><img src="images/upload.png" class="img-fluid" alt=""></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 
 	<section class="box-money">
