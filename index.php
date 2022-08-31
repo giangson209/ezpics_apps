@@ -508,12 +508,13 @@
 			<div class="active-event">
 				<div class="choose-top">
 					<ul>
-						<li><a href="javascript:void(0)" data-tab="tab-1" data-lock="lock-1" class="active"><span>Layer 1</span></a></li>
-						<li><a href="javascript:void(0)" data-tab="tab-2" data-lock="lock-2"><span>Text 2</span></a></li>
-						<li><a href="javascript:void(0)" data-tab="tab-3" data-lock="lock-3"><span>Layer 3</span></a></li>
-						<li><a href="javascript:void(0)" data-tab="tab-4" data-lock="lock-4"><span>Layer 4</span></a></li>
-						<li><a href="javascript:void(0)" data-tab="tab-5" data-lock="lock-5"><span>Layer 5</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-1" data-lock="lock-1" class="draggable active"><span>Layer 1</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-2" data-lock="lock-2" class="draggable"><span>Text 2</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-3" data-lock="lock-3" class="draggable"><span>Layer 3</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-4" data-lock="lock-4" class="draggable"><span>Layer 4</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-5" data-lock="lock-5" class="draggable"><span>Layer 5</span></a></li>
 					</ul>
+					<div id="console" class="d-none"></div>
 				</div>
 				<div class="content-tab-choose active" id="tab-1">
 					<div class="top">

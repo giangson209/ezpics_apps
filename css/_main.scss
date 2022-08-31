@@ -889,6 +889,10 @@ main {
 	    height: 57px;
 	    padding: 6px 0;
 	    font-size: 10px;
+	    position: absolute;
+	    width: calc(100% - 14px);
+	    top: 0;
+	    left: 7px;
 	    &.active {
 	    	color: #000000;
 	    	background: linear-gradient(180deg, #EBA000 0%, #FFCC00 100%);
@@ -906,6 +910,9 @@ main {
 			flex: 0 0 20%;
 		    max-width: 20%;
 		    padding: 0 7px;
+		    position: relative;
+		    width: 100%;
+		    height: 57px;
 		}
 	}
 }
@@ -1071,4 +1078,11 @@ main {
     &.active {
     	right: 0;
     }
+}
+
+#console {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+	display: none !important;
 }

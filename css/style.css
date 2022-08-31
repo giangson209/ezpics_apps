@@ -1222,6 +1222,10 @@ main {
   height: 57px;
   padding: 6px 0;
   font-size: 10px;
+  position: absolute;
+  width: calc(100% - 14px);
+  top: 0;
+  left: 7px;
 }
 .choose-top a.active {
   color: #000000;
@@ -1240,6 +1244,9 @@ main {
   flex: 0 0 20%;
   max-width: 20%;
   padding: 0 7px;
+  position: relative;
+  width: 100%;
+  height: 57px;
 }
 
 .content-tab-choose {
@@ -1392,6 +1399,13 @@ main {
 }
 .box-detail-edit.active {
   right: 0;
+}
+
+#console {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  display: none !important;
 }
 
 .loading {

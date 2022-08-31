@@ -200,5 +200,42 @@ $(document).ready(function(){
     $('.back-layer').click(function(){
         $('.box-detail-edit, .back-layer, html, body').removeClass('active');
     })
+
+    $(".layer-1").click(function() {
+        $(".draggable").draggableTouch();
+    });
+    // $(".draggable").draggableTouch(); 
+    // $("#enable-transform").click(function() {
+    //     $(".draggable").draggableTouch({useTransform:true});
+    // });
+    // $("#disable").click(function() {
+    //     $(".draggable").draggableTouch("disable");
+    // });
+    
+    $(".draggable").bind("dragstart", function(e, pos) {
+        console.log("dragstart:", this, pos.left + "," + pos.top);
+        var tab_id = $(this).attr('data-tab');
+
+        $('.choose-top a').removeClass('active');
+        $('.content-tab-choose').removeClass('active');
+
+        $(this).addClass('active');
+        $("#"+tab_id).addClass('active');
+    }).bind("dragend", function(e, pos) {
+        console.log("dragend:", this, pos.left + "," + pos.top);
+    });
+
+    if ("ontouchstart" in document.documentElement) {
+        window.console = {
+            log: function(a, b, c) {
+                if (a && b && c)
+                    $("<div>" + a + " " + b + " " + c + "</div>").appendTo($("#console"));
+                else if (a && b)
+                    $("<div>" + a + " " + b + "</div>").appendTo($("#console"));
+                else if (a)
+                    $("<div>" + a + "</div>").appendTo($("#console"));
+            }
+        };
+    }
 })
 
