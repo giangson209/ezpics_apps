@@ -491,7 +491,14 @@
 	<section class="box-detail-edit">
 		<div class="teop">
 			<div class="container">
-				<div class="avar-thumb"><img src="images/thumb.png" class="img-fluid w-100" alt=""></div>
+				<div class="avar-thumb">
+					<div class="thumb-checklayer"><img src="images/thumb.png" class="img-fluid w-100" alt=""></div>
+					<div class="draggable drag-1"><span><img src="images/logo.png" class="img-fluid" alt=""></span></div>
+					<div class="draggable drag-2"><span>Layer 2</span></div>
+					<div class="draggable drag-3"><span><img src="images/menu-1.png" class="img-fluid" alt=""></span></div>
+					<div class="draggable drag-4"><span>Layer 4</span></div>
+					<div class="draggable drag-5"><span>Layer 5</span></div>
+				</div>
 				<div class="btn-method-layer">
 					<ul>
 						<li><a href="javascript:void(0)" class="clc_layer layer-1">Layer</a></li>
@@ -508,11 +515,11 @@
 			<div class="active-event">
 				<div class="choose-top">
 					<ul>
-						<li><a href="javascript:void(0)" data-tab="tab-1" data-lock="lock-1" class="draggable active"><span>Layer 1</span></a></li>
-						<li><a href="javascript:void(0)" data-tab="tab-2" data-lock="lock-2" class="draggable"><span>Text 2</span></a></li>
-						<li><a href="javascript:void(0)" data-tab="tab-3" data-lock="lock-3" class="draggable"><span>Layer 3</span></a></li>
-						<li><a href="javascript:void(0)" data-tab="tab-4" data-lock="lock-4" class="draggable"><span>Layer 4</span></a></li>
-						<li><a href="javascript:void(0)" data-tab="tab-5" data-lock="lock-5" class="draggable"><span>Layer 5</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-1" data-lock="lock-1" class="active"><span>Layer 1</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-2" data-lock="lock-2" class=""><span>Text 2</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-3" data-lock="lock-3" class=""><span>Layer 3</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-4" data-lock="lock-4" class=""><span>Layer 4</span></a></li>
+						<li><a href="javascript:void(0)" data-tab="tab-5" data-lock="lock-5" class=""><span>Layer 5</span></a></li>
 					</ul>
 					<div id="console" class="d-none"></div>
 				</div>

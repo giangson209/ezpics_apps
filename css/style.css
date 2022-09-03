@@ -510,6 +510,34 @@ main {
 
 .avar-thumb {
   margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.avar-thumb .draggable {
+  position: absolute;
+  z-index: 10;
+  left: 45%;
+  pointer-events: none;
+  opacity: 0;
+}
+.avar-thumb .draggable.active {
+  opacity: 1;
+  pointer-events: unset;
+}
+.avar-thumb .draggable.drag-1 {
+  top: 0;
+}
+.avar-thumb .draggable.drag-2 {
+  top: 15%;
+}
+.avar-thumb .draggable.drag-3 {
+  top: 25%;
+}
+.avar-thumb .draggable.drag-4 {
+  top: 45%;
+}
+.avar-thumb .draggable.drag-5 {
+  top: 60%;
 }
 
 .info-thumb h1 {
@@ -1222,10 +1250,7 @@ main {
   height: 57px;
   padding: 6px 0;
   font-size: 10px;
-  position: absolute;
-  width: calc(100% - 14px);
-  top: 0;
-  left: 7px;
+  width: 100%;
 }
 .choose-top a.active {
   color: #000000;
