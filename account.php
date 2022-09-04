@@ -1,9 +1,9 @@
 <?php include 'header.php';?>
 <main class="p-0">
 	<section class="box-account">
-		<!-- <div class="loading text-center">
+		<div class="loading text-center">
 			<div class="logo"><img src="images/logo.png" class="img-fluid" alt=""></div>
-		</div> -->
+		</div>
 		<div class="content-account">
 			<div class="content">
 				<div class="logo text-center"><img src="images/logo.png" class="img-fluid" alt=""></div>

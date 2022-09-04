@@ -1,6 +1,9 @@
 <?php include 'header.php';?>
 <?php include 'layout/menu-top.php';?>
 <main>
+	<section class="loading text-center">
+		<div class="logo"><img src="images/logo.png" class="img-fluid" alt=""></div>
+	</section>
 	<section class="box-banner">
 		<div class="slide-banner">
 			<div class="item-slide">
